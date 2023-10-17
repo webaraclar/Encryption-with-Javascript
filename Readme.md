@@ -3,7 +3,7 @@ EN
 * With this tool, you can generate various types of encrypted texts.
   
 TR
-* Bu araç ile çeşitli tiplerde kriptlanmış yazılar üretebilirsiniz.
+* Bu araç ile çeşitli tiplerde kriptolanmış yazılar üretebilirsiniz.
 
 
 ## How is it used?
