@@ -4,36 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="author" content="webaraclar">
-    <script type="text/javascript" lang="Javascript" src="js/crypto-js.min.js"></script>
+    <meta name="author" content="webaraclar">
+    <script type="text/javascript" src="js/crypto-js.min.js"></script>
+	<style>
+	#govde{
+		border: 3px solid green;
+		padding: 10px;
+		background-color: #dedede;
+		width: fit-content;
+		margin: auto;
+	}
+	</style>
     <title>Javascript ile Kriptolama</title>
 </head>
 <body>
-<div id="govde">
-    <label for="kripto_tipi"><strong>Şifreleme Türünü Seçin:</strong></label>
-    <select name="kripto_tipi">
-      <option value="0">MD5</option>
-      <option value="1">SHA1</option>
-      <option value="2">SHA224</option>
-      <option value="3">SHA256</option>
-      <option value="4">SHA3</option>
-      <option value="5">SHA384</option>
-      <option value="6">SHA512</option>
-    </select>
-    <br><br>
-    <label for="icerik"><strong>Lütfen Aşağıdaki Kutuya Bir Şeyler Yazın (<span style="color:red">veya Yazmayın</span>)</strong></label>
-    <br><br>
-   <textarea id="icerik" rows="3" cols="54" placeholder="İçerik gir"></textarea>
-    <br><br>
-    <button onclick="kriptola()">Kriptola</button>
-</div>
-<script type="text/javascript">
-    const dizi = [CryptoJS.MD5, CryptoJS.SHA1, CryptoJS.SHA224, CryptoJS.SHA256, CryptoJS.SHA3, CryptoJS.SHA384, CryptoJS.SHA512];
-    function kriptola(){
-        let k_tipi = document.getElementsByTagName("kripto_tipi").value; 
-        let icerik =  (dizi.at(k_tipi)(document.getElementById("icerik").value));
-        document.getElementById("icerik").value =  icerik;
-    }
-</script>
+	<div id="govde">
+		<label for="kripto_tipi"><strong>Şifreleme Türünü Seçin:</strong></label>
+		<select id="kripto_tipi">
+		  <option value="0">MD5</option>
+		  <option value="1">SHA1</option>
+		  <option value="2">SHA224</option>
+		  <option value="3">SHA256</option>
+		  <option value="4">SHA3</option>
+		  <option value="5">SHA384</option>
+		  <option value="6">SHA512</option>
+		</select>
+		<br><br>
+		<label for="icerik"><strong>Lütfen Aşağıdaki Kutuya Bir Şeyler Yazın (<span style="color:red">veya Yazmayın</span>)</strong></label>
+		<br><br>
+		<textarea id="icerik" rows="4" cols="60" placeholder="İçerik gir"></textarea>
+		<br><br>
+		<button onclick="kriptola()">Kriptola</button>
+	</div>
+	<script type="text/javascript">
+		const dizi = [CryptoJS.MD5, CryptoJS.SHA1, CryptoJS.SHA224, CryptoJS.SHA256, CryptoJS.SHA3, CryptoJS.SHA384, CryptoJS.SHA512];
+		function kriptola(){
+			let k_tipi = document.getElementById("kripto_tipi").value;
+			let icerik =  (dizi.at(k_tipi)(document.getElementById("icerik").value));
+			document.getElementById("icerik").value =  icerik;
+		}
+	</script>
 </body>
 </html>
