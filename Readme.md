@@ -1,20 +1,21 @@
 ## Basic information
-EN
+#### EN
 * With this tool, you can generate various types of encrypted texts.
-  
-TR
+
+#### TR
 * Bu araç ile çeşitli tiplerde kriptolanmış yazılar üretebilirsiniz.
 
-
 ## How is it used?
-EN
+#### EN
 * Download the html file and the js folder to the local new folder.
 * Open the html file with any web browser you are using.
 * Type anything in the text box and click the button.
 * Your text messages are encrypted.
+* Live demo: [Date-Calculation-and-Countdown-Tools](https://webaraclar.github.io/Date-Calculation-and-Countdown-Tools/index.html)
 
-TR
+#### TR
 * Html dosyasını ve js klasörünü yerel yeni klasöre indirin.
 * Html dosyasını kullandığınız herhangi bir web tarayıcısıyla açın.
 * Metin kutusuna herhangi bir şey yazın ve düğmesine tıklayın.
 * Metin mesajlarınız şifrelenir.
+* Canlı Önizleme: [Date-Calculation-and-Countdown-Tools](https://webaraclar.github.io/Date-Calculation-and-Countdown-Tools/index.html)
